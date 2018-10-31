@@ -4,10 +4,10 @@ import Cell from './Cell'
 const Board = ({boardCells}) => {
 
     const renderBoard = []
-    
+
     for(let i = 0; i < 7; i++){
         while (boardCells[i].length < 6) {
-            boardCells[i].push("blank")
+            boardCells[i].push("white")
         }
     }
     for(let j = 5; j >=0; j--) {

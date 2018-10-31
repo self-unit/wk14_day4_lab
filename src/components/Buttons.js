@@ -4,7 +4,7 @@ const Buttons= ({onButtonSelect}) => {
 
     const options = []
     for(let i=0; i < 7; i++) {
-        const value = <option value={i} key={i}>Column {i+1}</option>
+        const value = <div className="button-div"><button className="button" onClick={handleChange} value={i} key={i}>Column {i+1}</button></div>
         options.push(value);
     }
 
@@ -13,10 +13,9 @@ const Buttons= ({onButtonSelect}) => {
     }
 
     return(
-        <select id="column-selector" defaultValue="default" onChange={handleChange} >
-            <option disabled value="default">Choose a column</option>
+        <div className="column-selector">
             {options}
-        </select>
+        </div>
     )
 }
 

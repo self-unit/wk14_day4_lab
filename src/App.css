@@ -20,13 +20,15 @@
 .board {
   display: grid;
   outline: solid 1px;
-  height: 500px;
-  width: 500px;
-  margin-top: 10%;
+  height: 550px;
+  width: 584px;
+  margin-top: 1%;
   margin-left: 20%;
   margin-right: 20%;
+  margin-bottom: 5%;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  background: blue;
 }
 
 .blank {
@@ -41,3 +43,15 @@
   background: yellow;
 }
 
+.column-selector {
+  display: flex;
+  flex-flow: row;
+  margin-top: 5%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.button-div {
+margin-left: 14px;
+margin-right: 14px;
+}
