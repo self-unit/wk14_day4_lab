@@ -1,15 +1,16 @@
 import React, { Component } from 'react';
 import Board from '../components/Board';
-import Buttons from '../components/Buttons';
+// import Buttons from '../components/Buttons';
 
-class Game extends Component(){
+class Game extends Component {
 
     constructor(props){
-        super(props)
+        super(props);
         this.state = {
             boardCells: [[],[],[],[],[],[],[]],
             turn: null
         };
+        this.handleButtonSelect = this.handleButtonSelect.bind(this);
     }
 
     componentDidMount(){
@@ -32,8 +33,8 @@ class Game extends Component(){
     render(){
         return(
             <div>
-            <Buttons onButtonSelect={this.handleButtonSelect}/>
-            <Board boardcells={this.state.boardCells} />
+            {/* <Buttons onButtonSelect={this.handleButtonSelect}/> */}
+            <Board boardCells={this.state.boardCells} />
             </div>
         )
     }
