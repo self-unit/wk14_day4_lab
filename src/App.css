@@ -52,6 +52,18 @@
 }
 
 .button-div {
-margin-left: 14px;
-margin-right: 14px;
+  margin-left: 14px;
+  margin-right: 14px;
+}
+
+h2.player1 {
+-webkit-text-stroke: 1px black;
+  color: red;
+  margin-left: 40%;
+}
+
+h2.player2 {
+  -webkit-text-stroke: 1px black;
+  color: yellow;
+  margin-left: 40%;
 }

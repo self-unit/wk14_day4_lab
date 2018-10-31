@@ -43,6 +43,7 @@ class Game extends Component {
 
         return(
             <div>
+            <h2 className={"player" + this.state.turn}>It's your turn  player {this.state.turn}</h2>
             <Buttons onButtonSelect={this.handleButtonSelect}/>
             <Board boardCells={board} />
             </div>
